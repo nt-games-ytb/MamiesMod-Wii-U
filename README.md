@@ -14,5 +14,5 @@ Just like described [here](https://github.com/dimok789/homebrew_launcher/blob/ma
 **Marionumber1** for exploit development and TCP Gecko Installer contributions  
 **NWPlayer123** for the `pyGecko` client library  
 **Chadderz** for the original `TCP Gecko Installer`  
-**Kinnay** for some `DiiBugger` code this project made use of
+**Kinnay** for some `DiiBugger` code this project made use of  
 **nt games** for edit the TCP Gecko Installer to MamiesMod Wii U
