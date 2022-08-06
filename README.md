@@ -1,5 +1,5 @@
 # What is this ?
-This is the a modification of the TCP Gecko Installer of the [JGecko U](https://github.com/BullyWiiPlaza/JGeckoU) client. More simply, it is the source code of [MamiesMod Wii U.elf](http://nt-games-site.000webhostapp.com/other-1/mamiesmod-wii-u-app.html), a Wii U app for connect your Wii U to your PC.
+This is the a modification of the [TCP Gecko Installer](https://github.com/BullyWiiPlaza/tcpgecko). More simply, it is the source code of [MamiesMod Wii U.elf](http://nt-games-site.000webhostapp.com/other-1/mamiesmod-wii-u-app.html), a Wii U app for connect your Wii U to your PC.
 
 # How do I use this ?
 This is an app for the [Homebrew Launcher](https://github.com/dimok789/homebrew_launcher). For more information of [MamiesMod Wii U.elf](http://nt-games-site.000webhostapp.com/other-1/mamiesmod-wii-u-app.html) go [here](http://nt-games-site.000webhostapp.com/other-1/mamiesmod-wii-u-app.html). For know how to install and use [MamiesMod V4](https://youtu.be/BZxRxmEmlrw) go [here](https://www.youtube.com/c/ntgamesytb/).
