@@ -23,7 +23,7 @@
  ***************************************************************************/
 #include <string.h>
 #include <malloc.h>
-#include "os_functions.h"
+#include "dynamic_libs/os_functions.h"
 #include "iosuhax.h"
 
 #define IOSUHAX_MAGIC_WORD          0x4E696365

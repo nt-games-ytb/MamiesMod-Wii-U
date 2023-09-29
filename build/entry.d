@@ -1,49 +1,48 @@
-entry.o: D:/ELF/tcpgecko-master/src/entry.c \
- D:/ELF/tcpgecko-master/src/tcpgecko/main.h \
- d:\elf\tcpgecko-master\src\common\types.h \
- C:/devkitPro/libogc/include/gctypes.h \
- d:\elf\tcpgecko-master\src\dynamic_libs\os_functions.h \
- D:/ELF/tcpgecko-master/src/common/os_defs.h \
- D:/ELF/tcpgecko-master/src/tcpgecko/title.h \
- D:/ELF/tcpgecko-master/src/dynamic_libs/socket_functions.h \
- D:/ELF/tcpgecko-master/src/dynamic_libs/gx2_functions.h \
- d:\elf\tcpgecko-master\src\dynamic_libs\gx2_types.h \
- d:\elf\tcpgecko-master\src\common\fs_defs.h \
- d:\elf\tcpgecko-master\src\common\types.h \
- D:/ELF/tcpgecko-master/src/utils/logger.h \
- D:/ELF/tcpgecko-master/src/tcpgecko/tcp_gecko.h \
- D:/ELF/tcpgecko-master/src/common/common.h \
- D:/ELF/tcpgecko-master/src/common/os_defs.h \
- D:/ELF/tcpgecko-master/src/common/fs_defs.h
-
-D:/ELF/tcpgecko-master/src/tcpgecko/main.h:
-
-d:\elf\tcpgecko-master\src\common\types.h:
-
+entry.o: C:/MamiesMod-Wii-U/src/entry.c \
+ C:/MamiesMod-Wii-U/src/tcpgecko/main.h \
+ C:/MamiesMod-Wii-U/src/common/types.h \
+ C:/devkitPro/libogc/include/gctypes.h C:/MamiesMod-Wii-U/src/stdint.h \
+ C:/MamiesMod-Wii-U/src/machine/_default_types.h \
+ C:/MamiesMod-Wii-U/src/sys/features.h \
+ C:/MamiesMod-Wii-U/src/_newlib_version.h \
+ C:/MamiesMod-Wii-U/src/sys/_intsup.h \
+ C:/MamiesMod-Wii-U/src/sys/_stdint.h \
+ C:/MamiesMod-Wii-U/src/dynamic_libs/os_functions.h \
+ C:/MamiesMod-Wii-U/src/common/os_defs.h \
+ C:/MamiesMod-Wii-U/src/cfw_config.h \
+ C:/MamiesMod-Wii-U/src/tcpgecko/title.h \
+ C:/MamiesMod-Wii-U/src/dynamic_libs/socket_functions.h \
+ C:/MamiesMod-Wii-U/src/dynamic_libs/gx2_functions.h \
+ C:/MamiesMod-Wii-U/src/dynamic_libs/gx2_types.h \
+ C:/MamiesMod-Wii-U/src/common/fs_defs.h \
+ C:/MamiesMod-Wii-U/src/common/types.h \
+ C:/MamiesMod-Wii-U/src/utils/logger.h \
+ C:/MamiesMod-Wii-U/src/tcpgecko/tcp_gecko.h \
+ C:/MamiesMod-Wii-U/src/common/common.h \
+ C:/MamiesMod-Wii-U/src/common/os_defs.h \
+ C:/MamiesMod-Wii-U/src/common/fs_defs.h \
+ C:/MamiesMod-Wii-U/src/cfw_config.h
+C:/MamiesMod-Wii-U/src/tcpgecko/main.h:
+C:/MamiesMod-Wii-U/src/common/types.h:
 C:/devkitPro/libogc/include/gctypes.h:
-
-d:\elf\tcpgecko-master\src\dynamic_libs\os_functions.h:
-
-D:/ELF/tcpgecko-master/src/common/os_defs.h:
-
-D:/ELF/tcpgecko-master/src/tcpgecko/title.h:
-
-D:/ELF/tcpgecko-master/src/dynamic_libs/socket_functions.h:
-
-D:/ELF/tcpgecko-master/src/dynamic_libs/gx2_functions.h:
-
-d:\elf\tcpgecko-master\src\dynamic_libs\gx2_types.h:
-
-d:\elf\tcpgecko-master\src\common\fs_defs.h:
-
-d:\elf\tcpgecko-master\src\common\types.h:
-
-D:/ELF/tcpgecko-master/src/utils/logger.h:
-
-D:/ELF/tcpgecko-master/src/tcpgecko/tcp_gecko.h:
-
-D:/ELF/tcpgecko-master/src/common/common.h:
-
-D:/ELF/tcpgecko-master/src/common/os_defs.h:
-
-D:/ELF/tcpgecko-master/src/common/fs_defs.h:
+C:/MamiesMod-Wii-U/src/stdint.h:
+C:/MamiesMod-Wii-U/src/machine/_default_types.h:
+C:/MamiesMod-Wii-U/src/sys/features.h:
+C:/MamiesMod-Wii-U/src/_newlib_version.h:
+C:/MamiesMod-Wii-U/src/sys/_intsup.h:
+C:/MamiesMod-Wii-U/src/sys/_stdint.h:
+C:/MamiesMod-Wii-U/src/dynamic_libs/os_functions.h:
+C:/MamiesMod-Wii-U/src/common/os_defs.h:
+C:/MamiesMod-Wii-U/src/cfw_config.h:
+C:/MamiesMod-Wii-U/src/tcpgecko/title.h:
+C:/MamiesMod-Wii-U/src/dynamic_libs/socket_functions.h:
+C:/MamiesMod-Wii-U/src/dynamic_libs/gx2_functions.h:
+C:/MamiesMod-Wii-U/src/dynamic_libs/gx2_types.h:
+C:/MamiesMod-Wii-U/src/common/fs_defs.h:
+C:/MamiesMod-Wii-U/src/common/types.h:
+C:/MamiesMod-Wii-U/src/utils/logger.h:
+C:/MamiesMod-Wii-U/src/tcpgecko/tcp_gecko.h:
+C:/MamiesMod-Wii-U/src/common/common.h:
+C:/MamiesMod-Wii-U/src/common/os_defs.h:
+C:/MamiesMod-Wii-U/src/common/fs_defs.h:
+C:/MamiesMod-Wii-U/src/cfw_config.h:

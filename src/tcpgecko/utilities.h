@@ -7,10 +7,12 @@
 #include <stddef.h> /* size_t */
 
 void writeCode(u32 address, u32 instruction) {
+
 	u32 *pointer = (u32 *) (address + 0xA0000000);
 	*pointer = instruction;
 	DCFlushRange(pointer, 4);
 	ICInvalidateRange(pointer, 4);
+
 }
 
 void patchFunction(char *function, char *patchBytes, unsigned int patchBytesSize, int functionOffset) {

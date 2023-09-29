@@ -1,10 +1,7 @@
-DirList.o: D:/ELF/tcpgecko-master/src/fs/DirList.cpp \
- D:/ELF/tcpgecko-master/src/fs/DirList.h \
+DirList.o: C:/MamiesMod-Wii-U/src/fs/DirList.cpp \
+ C:/MamiesMod-Wii-U/src/fs/DirList.h \
  C:/devkitPro/libogc/include/gctypes.h \
- D:/ELF/tcpgecko-master/src/utils/StringTools.h
-
-D:/ELF/tcpgecko-master/src/fs/DirList.h:
-
+ C:/MamiesMod-Wii-U/src/utils/StringTools.h
+C:/MamiesMod-Wii-U/src/fs/DirList.h:
 C:/devkitPro/libogc/include/gctypes.h:
-
-D:/ELF/tcpgecko-master/src/utils/StringTools.h:
+C:/MamiesMod-Wii-U/src/utils/StringTools.h:

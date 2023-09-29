@@ -31,7 +31,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <sys/iosupport.h>
-#include "os_functions.h"
+#include "dynamic_libs/os_functions.h"
 #include "iosuhax.h"
 
 typedef struct _fs_dev_private_t {

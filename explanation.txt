@@ -1,0 +1,12 @@
+scripts --> api-CodeEnablesSetter :
+Numéro du code (dans args.txt) + 00000001 (On/Déjà activer quand le jeu se lance) ou 00000000 (Off/Pas activer quand le jeu se lance)
+
+Assemble --> build.bat :
+Créer un fichier asm avec le fichier main.txt grâce au deux logiciels
+
+Tout ton code prinpale est écrit et créer en assembler dans le main.txt
+Ce fichier va ensuite donné /assemble/asm qui va donné scripts/main
+Le run va être le code qui va activer ton code (dans main)
+et du coup build va copier tout ce qu'il y a dans les scripts et va les écrire dans tcp_gecko.cpp à la ligne 1569
+et ils seront donc tous éxecuter au lancement du jeu (sa fait de la raw write)
+Le debug permet de te connecter à wii u et d'activer tout

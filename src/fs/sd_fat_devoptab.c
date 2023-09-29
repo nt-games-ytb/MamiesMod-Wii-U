@@ -22,7 +22,7 @@
  * distribution.
  ***************************************************************************/
 #include <errno.h>
-#include <ogc/disc_io.h>
+#include "disc_io.h"
 #include <sys/statvfs.h>
 #include <sys/dirent.h>
 #include <string.h>

@@ -5,10 +5,14 @@
 #include "utils/logger.h"
 #include "tcpgecko/tcp_gecko.h"
 #include "common/common.h"
+#include "cfw_config.h"
 
 int entry() {
 	if (isRunningAllowedTitleID()) {
 		InitOSFunctionPointers();
+		InitSysFunctionPointers();
+		InitFSFunctionPointers();
+		InitVPadFunctionPointers();
 		InitSocketFunctionPointers();
 		InitGX2FunctionPointers();
 
@@ -22,7 +26,10 @@ int entry() {
 	//! *******************************************************************
 	//! *                 Jump to our application                    *
 	//! *******************************************************************
-	return Menu_Main();
+
+	cfw_config_t config;
+
+	return Menu_Main(&config);
 }
 
 int __entry_menu(int argc, char **argv) {

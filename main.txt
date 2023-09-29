@@ -1,0 +1,238 @@
+#----------------------------#
+#	スタック保管 -> Stockage en pile
+#----------------------------#
+
+lis r2,0x1602
+mflr r0
+stw r0,0(r2)
+
+#----------------------------#
+#	最初だけいるもの -> Quel n'est que le premier
+#----------------------------#
+
+li r3,1
+lis r12,0x310
+ori r12,r12,0x3064
+mtctr r12
+bctrl
+lis r12,0x310
+ori r12,r12,0x3080
+mtctr r12
+bctrl
+lis r12,0
+stw r12,0x20(r2)
+lfs f1,0x20(r2)
+lis r12,0x43E0
+stw r12,0x20(r2)
+lfs f2,0x20(r2)
+lis r12,0x4374
+stw r12,0x20(r2)
+lfs f3,0x20(r2)
+lis r12,0x453B
+stw r12,0x20(r2)
+lfs f6,0x20(r2)
+lis r12,0x311
+ori r12,r12,0xD4C
+mtctr r12
+bctrl
+li r3,0
+lis r12,0x310
+ori r12,r12,0x3064
+mtctr r12
+bctrl
+lis r12,0x310
+ori r12,r12,0x3080
+mtctr r12
+bctrl
+lis r12,0x30F
+ori r12,r12,0x974C
+mtctr r12
+bctrl
+lis r12,0x30E
+ori r12,r12,0x4B24
+mtctr r12
+bctrl
+lis r12,0x30E
+ori r12,r12,0x9B9C
+mtctr r12
+bctrl
+lis r12,0x30E
+ori r12,r12,0x5284
+mtctr r12
+bctrl
+li r3,4
+li r4,5
+lis r12,0x30E
+ori r12,r12,0x52A0
+mtctr r12
+bctrl
+
+# 文字を増やす場合はここから複製する -> Si vous souhaitez augmenter le nombre de caractères, dupliquez à partir d'ici
+#----------------------------#
+#   描画スタート -> Commence à dessiner
+#----------------------------#
+
+bl swprintf_1 # 増やす場合は名前を変える -> Changez le nom pour augmenter
+
+# 文字色(§f) 消さないでください -> Couleur du texte (§f) Ne pas effacer
+.long 0x00A70035 #-> §4
+
+# MamiesMod Client
+.long 0x004D0061
+.long 0x006D0069
+.long 0x00650073
+.long 0x004D006F
+.long 0x00640020
+.long 0x0043006C
+.long 0x00690065
+.long 0x006E0074
+.long 0
+swprintf_1: # 増やす場合は名前を変える -> Changez le nom pour augmenter
+mflr r5
+addi r3,r2,0x30
+li r4,0x64
+crset 4*cr1+eq
+lis r12,0x382
+ori r12,r12,0xC8C0
+mtctr r12
+bctrl
+lis r12,0x30E
+ori r12,r12,0x4B3C
+mtctr r12
+bctrl
+lis r12,0x3FF0 # 大きさ -> Taille
+stw r12,0x20(r2)
+lfs f1,0x20(r2)
+lfs f2,0x20(r2)
+lis r12,0x30E
+ori r12,r12,0x4B6C
+mtctr r12
+bctrl
+lis r12,0x42A8 # 横(左) -> Honrizontale (augmente = droite | baisse = gauche)
+stw r12,0x20(r2)
+lfs f1,0x20(r2)
+lis r12,0x4040 # 縦(下) -> Verticale (augmente = bas | baisse = haut)
+stw r12,0x20(r2)
+lfs f2,0x20(r2)
+lis r12,0x30E
+ori r12,r12,0x4B54
+mtctr r12
+bctrl
+li r3,0
+addi r4,r2,0x30
+lis r12,0x20B
+ori r12,r12,0x8D4
+mtctr r12
+bctrl
+mr r4,r3
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x104(r3)
+li r5,0
+li r6,0
+li r7,0
+lis r12,0x312
+ori r12,r12,0x6B88
+mtctr r12
+bctrl
+lis r12,0x30E
+ori r12,r12,0x4BD8
+mtctr r12
+bctrl
+# 文字を増やす場合はここまで複製する -> Si vous souhaitez augmenter le nombre de caractères, dupliquez-le jusqu'à présent
+
+# 文字を増やす場合はここから複製する -> Si vous souhaitez augmenter le nombre de caractères, dupliquez à partir d'ici
+#----------------------------#
+#   描画スタート(2) -> Commencer à dessiner (2)
+#----------------------------#
+
+bl swprintf_2 # 増やす場合は名前を変える -> Changez le nom pour augmenter
+
+# 文字色(§B) 消さないでください -> Couleur du texte (§B) Ne pas effacer
+.long 0x00A70066 # -> §f
+
+# It's a beta, the client is not finished !
+.long 0x00490074
+.long 0x00270073
+.long 0x00200061
+.long 0x00200062
+.long 0x00650074
+.long 0x0061002C
+.long 0x00200074
+.long 0x00680065
+.long 0x00200063
+.long 0x006C0069
+.long 0x0065006E
+.long 0x00740020
+.long 0x00690073
+.long 0x0020006E
+.long 0x006F0074
+.long 0x00200066
+.long 0x0069006E
+.long 0x00690073
+.long 0x00680065
+.long 0x00640020
+.long 0x00210000
+.long 0
+swprintf_2: # 増やす場合は名前を変える -> Changez le nom pour augmenter
+mflr r5
+addi r3,r2,0x30
+li r4,0x64
+crset 4*cr1+eq
+lis r12,0x382
+ori r12,r12,0xC8C0
+mtctr r12
+bctrl
+lis r12,0x30E
+ori r12,r12,0x4B3C
+mtctr r12
+bctrl
+lis r12,0x3F70 # 大きさ -> Taille
+stw r12,0x20(r2)
+lfs f1,0x20(r2)
+lfs f2,0x20(r2)
+lis r12,0x30E
+ori r12,r12,0x4B6C
+mtctr r12
+bctrl
+lis r12,0x4322 # 横(左) -> -> Honrizontale (augmente = droite | baisse = gauche)
+stw r12,0x20(r2)
+lfs f1,0x20(r2)
+lis r12,0x41C0 # 縦(下) -> Verticale (augmente = bas | baisse = haut)
+stw r12,0x20(r2)
+lfs f2,0x20(r2)
+lis r12,0x30E
+ori r12,r12,0x4B54
+mtctr r12
+bctrl
+li r3,0
+addi r4,r2,0x30
+lis r12,0x20B
+ori r12,r12,0x8D4
+mtctr r12
+bctrl
+mr r4,r3
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x104(r3)
+li r5,0
+li r6,0
+li r7,0
+lis r12,0x312
+ori r12,r12,0x6B88
+mtctr r12
+bctrl
+lis r12,0x30E
+ori r12,r12,0x4BD8
+mtctr r12
+bctrl
+# 文字を増やす場合はここまで複製する -> Si vous souhaitez augmenter le nombre de caractères, dupliquez-le jusqu'à présent
+
+#----------------------------#
+#	スタックロード -> Charge de pile
+#----------------------------#
+
+END:
+lwz r0,0(r2)
+mtlr r0
+blr

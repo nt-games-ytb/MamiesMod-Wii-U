@@ -1,1 +1,1 @@
-kernel_hooks.o: D:/ELF/tcpgecko-master/src/kernel/kernel_hooks.S
+kernel_hooks.o: C:/MamiesMod-Wii-U/src/kernel/kernel_hooks.S

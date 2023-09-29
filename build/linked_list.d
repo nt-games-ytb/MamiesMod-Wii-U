@@ -1,4 +1,3 @@
-linked_list.o: D:/ELF/tcpgecko-master/src/tcpgecko/linked_list.cpp \
- D:/ELF/tcpgecko-master/src/tcpgecko/linked_list.h
-
-D:/ELF/tcpgecko-master/src/tcpgecko/linked_list.h:
+linked_list.o: C:/MamiesMod-Wii-U/src/tcpgecko/linked_list.cpp \
+ C:/MamiesMod-Wii-U/src/tcpgecko/linked_list.h
+C:/MamiesMod-Wii-U/src/tcpgecko/linked_list.h:

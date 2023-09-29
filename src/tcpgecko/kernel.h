@@ -8,18 +8,6 @@
 
 // TODO Variable size, not hard-coded
 unsigned char *kernelCopyBufferOld[DATA_BUFFER_SIZE];
-
-void kernelCopyData(unsigned char *destinationBuffer, unsigned char *sourceBuffer, unsigned int length) {
-	if (length > DATA_BUFFER_SIZE) {
-		OSFatal("Kernel copy buffer size exceeded");
-	}
-
-	memcpy(kernelCopyBufferOld, sourceBuffer, length);
-	SC0x25_KernelCopyData((unsigned int) OSEffectiveToPhysical(destinationBuffer), (unsigned int) &kernelCopyBufferOld,
-						  length);
-	DCFlushRange(destinationBuffer, (u32) length);
-}
-
 unsigned char *kernelCopyBuffer[sizeof(int)];
 
 void kernelCopyInt(unsigned char *destinationBuffer, unsigned char *sourceBuffer, unsigned int length) {
@@ -32,6 +20,14 @@ void kernelCopyInt(unsigned char *destinationBuffer, unsigned char *sourceBuffer
 void writeKernelMemory(const void *address, uint32_t value) {
 	((int *) kernelCopyBuffer)[0] = value;
 	kernelCopyInt((unsigned char *) address, (unsigned char *) kernelCopyBuffer, sizeof(int));
+}
+
+void kernelCopyData(unsigned char *destinationBuffer, unsigned char *sourceBuffer, unsigned int length) {
+	if (length > DATA_BUFFER_SIZE){OSFatal("Kernel copy buffer size exceeded");}
+
+	memcpy(kernelCopyBufferOld, sourceBuffer, length);
+	SC0x25_KernelCopyData((unsigned int) OSEffectiveToPhysical(destinationBuffer), (unsigned int) &kernelCopyBufferOld,length);
+	DCFlushRange(destinationBuffer, (u32) length);
 }
 
 int readKernelMemory(const void *address) {

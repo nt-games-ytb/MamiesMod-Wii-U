@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<app version="1">
+<?xml version="2.0" encoding="UTF-8" standalone="yes"?>
+<app version="2">
   <name>MamiesMod Wii U</name>
-  <coder>nt games and BullyWiiPlaza</coder>
-  <version>1</version>
-  <url>https://www.youtube.com/channel/UCqI3x47OlUfndU3b9VhAwwQ</url>
-  <release_date>19/08/2020</release_date>
-  <short_description>For connect to the MamiesMod</short_description>
+  <coder>nt games, BullyWiiPlaza and Clover</coder>
+  <version>2</version>
+  <url>https://github.com/nt-games-ytb/MamiesMod-Wii-U/</url>
+  <release_date>29/09/2023</release_date>
+  <short_description>To connect to the MamiesMod</short_description>
   <long_description>Description :
-MamiesMod Wii U is an application for connects your Wii U to your PC with a MamiesMod or injector application.
+MamiesMod Wii U is an application for connects your Wii U to your PC with a MamiesMod or an other RTM Tool.
 
 Information :
-Youtube : nt games       Discord : nt games#0375
+Youtube : nt games       Discord : nt games
 NNID : shamanlin07 / nt_games_ytb / Mamies_faction / MamiesBlock
   </long_description>
-  <category>Tool/Injector</category>
+  <category>Tool/RTM</category>
 </app>

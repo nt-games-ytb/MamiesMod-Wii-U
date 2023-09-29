@@ -1,0 +1,17 @@
+<?xml version="2.0" encoding="UTF-8" standalone="yes"?>
+<app version="2">
+  <name>MamiesMod Wii U</name>
+  <coder>nt games, BullyWiiPlaza and Clover</coder>
+  <version>2</version>
+  <url>https://github.com/nt-games-ytb/MamiesMod-Wii-U/</url>
+  <release_date>29/09/2023</release_date>
+  <short_description>To connect to the MamiesMod</short_description>
+  <long_description>Description :
+MamiesMod Wii U is an application for connects your Wii U to your PC with a MamiesMod or an other RTM Tool.
+
+Information :
+Youtube : nt games       Discord : nt games
+NNID : shamanlin07 / nt_games_ytb / Mamies_faction / MamiesBlock
+  </long_description>
+  <category>Tool/RTM</category>
+</app>

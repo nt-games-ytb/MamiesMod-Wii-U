@@ -23,6 +23,7 @@ u64 cachedTitleID;
 unsigned char *kernelCopyBufferOld2[DATA_BUFFER_SIZE];
 
 void kernelCopyData2(unsigned char *destinationBuffer, unsigned char *sourceBuffer, unsigned int length) {
+
 	if (length > DATA_BUFFER_SIZE) {
 		OSFatal("Kernel copy buffer size exceeded");
 	}
@@ -32,6 +33,7 @@ void kernelCopyData2(unsigned char *destinationBuffer, unsigned char *sourceBuff
 						  (unsigned int) &kernelCopyBufferOld2,
 						  length);
 	DCFlushRange(destinationBuffer, (u32) length);
+
 }
 
 void setCodeHandlerEnabled(bool enabled) {

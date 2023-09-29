@@ -1,1 +1,1 @@
-syscalls_asm.o: D:/ELF/tcpgecko-master/src/kernel/syscalls_asm.S
+syscalls_asm.o: C:/MamiesMod-Wii-U/src/kernel/syscalls_asm.S
