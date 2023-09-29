@@ -26,5 +26,5 @@ I never got around to making them, but here are the ideas I had planned for futu
 **NWPlayer123** for the `pyGecko` client library  
 **Chadderz** for the original `TCP Gecko Installer`  
 **Kinnay** for some `DiiBugger` code this project made use of  
-**nt games** for editing the `TCP Gecko Installer` to `MamiesMod Wii U` and for creating the MamiesMod Client
+**nt games** for editing the `TCP Gecko Installer` to `MamiesMod Wii U` and for creating the MamiesMod Client    
 **Clover** for creating [`HelloWorldClient`](https://github.com/u08614s/HelloWorldDrawtextSample) and [`ShineClient`](https://github.com/u08614s/ShineClient)
