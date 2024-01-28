@@ -5,7 +5,7 @@
 #include "utils/logger.h"
 #include "tcpgecko/tcp_gecko.h"
 #include "common/common.h"
-#include "cfw_config.h"
+#include "config.h"
 
 int entry() {
 	if (isRunningAllowedTitleID()) {
@@ -27,7 +27,7 @@ int entry() {
 	//! *                 Jump to our application                    *
 	//! *******************************************************************
 
-	cfw_config_t config;
+	config_t config;
 
 	return Menu_Main(&config);
 }

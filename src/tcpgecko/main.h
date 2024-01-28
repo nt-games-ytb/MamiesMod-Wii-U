@@ -3,13 +3,13 @@
 
 #include "../common/types.h"
 #include "../dynamic_libs/os_functions.h"
-#include "cfw_config.h"
+#include "config.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-int Menu_Main(cfw_config_t * config);
+int Menu_Main(config_t *currentConfig);
 
 extern bool isCodeHandlerInstalled;
 extern bool areSDCheatsEnabled;

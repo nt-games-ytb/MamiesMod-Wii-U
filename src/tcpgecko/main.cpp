@@ -24,7 +24,7 @@
 #include "sd_ip_reader.h"
 #include "title.h"
 #include "tcp_gecko.h"
-#include "cfw_config.h"
+#include "config.h"
 #include "fs/sd_fat_devoptab.h"
 
 bool isCodeHandlerInstalled = false;
@@ -78,7 +78,7 @@ void install() {
 }
 
 /* Entry point */
-int Menu_Main(cfw_config_t * currentConfig) {//void) {
+int Menu_Main(config_t *currentConfig) {
 	//!*******************************************************************
 	//!                   Initialize function pointers                   *
 	//!*******************************************************************
@@ -137,8 +137,8 @@ int Menu_Main(cfw_config_t * currentConfig) {//void) {
 	s32 vpadError = -1;
 	VPADData vpad_data;
 	mount_sd_fat("sd");
-	cfw_config_t config;
-	memcpy(&config, currentConfig, sizeof(cfw_config_t));
+	config_t config;
+	memcpy(&config, currentConfig, sizeof(config_t));
 	default_config(&config);
     read_config(&config);
 	int settingSelected = 1;
@@ -550,9 +550,9 @@ int Menu_Main(cfw_config_t * currentConfig) {//void) {
 	config.language = language;
 	config.region = region;
 	config.version = version;
-	if(memcmp(currentConfig, &config, sizeof(cfw_config_t)) != 0)
+	if(memcmp(currentConfig, &config, sizeof(config_t)) != 0)
     {
-        memcpy(currentConfig, &config, sizeof(cfw_config_t));
+        memcpy(currentConfig, &config, sizeof(config_t));
         write_config(currentConfig);
     }
 
