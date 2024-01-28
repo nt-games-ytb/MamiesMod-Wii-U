@@ -8,7 +8,9 @@ This is a cheat client for Minecraft Wii U. It's still only a **beta**, and does
 This is an app for the [Homebrew Launcher](https://github.com/dimok789/homebrew_launcher). For more information of [MamiesMod Wii U.elf](http://nt-games-site.000webhostapp.com/other-1/mamiesmod-wii-u-app.html) go [here](http://nt-games-site.000webhostapp.com/other-1/mamiesmod-wii-u-app.html). For know how to install and use [MamiesMod V4](https://youtu.be/BZxRxmEmlrw) go [here](https://www.youtube.com/c/ntgamesytb/).
 
 # How do I compile ? 
-Just like described [here](https://github.com/dimok789/homebrew_launcher/blob/master/README.md#building-the-homebrew-launcher). Furthermore, you need to `make install` [`iosuhax`](https://github.com/dimok789/libiosuhax) since it is a dependency as well.
+Just like described [here](https://github.com/dimok789/homebrew_launcher/blob/master/README.md#building-the-homebrew-launcher) and for more informations go [here](https://wiiubrew.org/wiki/Main_Page).    
+So you'll need to install the packages required for Wii and Wii U development with `pacman -Syu wii-dev wiiu-dev`. You'll also need to install (`make && make install`) the main library : [`dynamic_lib`](https://github.com/Maschell/dynamic_libs), [`libutils`](https://github.com/Maschell/libutils) and [`libgui`](https://github.com/Maschell/libgui).    
+Furthermore, you need to `make install` [iosuhax](https://github.com/dimok789/libiosuhax) since it is a dependency as well.
 
 # Any ideas for future updates ?
 I never got around to making them, but here are the ideas I had planned for future updates :    
@@ -27,4 +29,5 @@ I never got around to making them, but here are the ideas I had planned for futu
 **Chadderz** for the original `TCP Gecko Installer`  
 **Kinnay** for some `DiiBugger` code this project made use of  
 **nt games** for editing the `TCP Gecko Installer` to `MamiesMod Wii U` and for creating the MamiesMod Client    
-**Clover** for creating [`HelloWorldClient`](https://github.com/u08614s/HelloWorldDrawtextSample) and [`ShineClient`](https://github.com/u08614s/ShineClient)
+**Clover** for creating [`HelloWorldClient`](https://github.com/u08614s/HelloWorldDrawtextSample) and [`ShineClient`](https://github.com/u08614s/ShineClient)    
+and thanks to all the people who worked on **hacking the Wii U** and who made it possible to create this application.
