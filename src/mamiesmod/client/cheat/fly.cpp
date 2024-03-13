@@ -7,7 +7,8 @@
 
 #include "../mamiesmod_client.hpp"
 
-void fly(void) {
+void fly(void)
+{
     static bool enabled = false;
 
     enabled = !enabled;
