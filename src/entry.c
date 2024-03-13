@@ -1,13 +1,16 @@
-#include "tcpgecko/main.h"
 #include "tcpgecko/title.h"
 #include "dynamic_libs/socket_functions.h"
 #include "dynamic_libs/gx2_functions.h"
+#include "dynamic_libs/fs_functions.h"
+#include "dynamic_libs/os_functions.h"
+#include "dynamic_libs/sys_functions.h"
+#include "dynamic_libs/vpad_functions.h"
 #include "utils/logger.h"
 #include "tcpgecko/tcp_gecko.h"
 #include "common/common.h"
-#include "config.h"
+#include "mamiesmod/mamiesmod_app.h"
 
-int entry() {
+int entry(void) {
 	if (isRunningAllowedTitleID()) {
 		InitOSFunctionPointers();
 		InitSysFunctionPointers();
@@ -27,9 +30,7 @@ int entry() {
 	//! *                 Jump to our application                    *
 	//! *******************************************************************
 
-	config_t config;
-
-	return Menu_Main(&config);
+	return app_menu();
 }
 
 int __entry_menu(int argc, char **argv) {
