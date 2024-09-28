@@ -16,7 +16,7 @@ void test(void)
     player->playSound(mc::SoundEvent::random_fuse, 100.0f, 1.0f);
 }
 
-void display_coordinates(float size, float x, float y, uint precision, uint32_t color = 0xFFFFFFFF)
+void display_coordinates(float size, float x, float y, uint32_t precision, uint32_t color = 0xFFFFFFFF)
 {
     mc::LocalPlayer* player = mc::Minecraft::getInstance()->thePlayer;
     wchar_t tmp[20];
